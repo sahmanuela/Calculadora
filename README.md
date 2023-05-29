@@ -3,12 +3,12 @@
 # Programação Web
 profs. Daniel de Andrade Varela e Rafael De Moura Speroni
 
-#Unidade 1 - Atividade Prática à Distância
+Unidade 1 - Atividade Prática à Distância
 
 Orientações:
 Para esta atividade, crie uma pasta para seu projeto e, dentro desta pasta, crie seus arquivos com extensão .html, .css e .js.
 
-ATIVIDADE PRÁTICA
+# ATIVIDADE PRÁTICA
 Crie uma calculadora que realize, ao menos, as quatro operações aritméticas básicas (adição, subtração, multiplicação e divisão). Sua calculadora deverá contar com:
 
 a) Estrutura HTML;
