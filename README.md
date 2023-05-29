@@ -1,7 +1,7 @@
 # Calculadora
 
-# Programação Web
-profs. Daniel de Andrade Varela e Rafael De Moura Speroni
+Disciplina: Programação Web
+Professores: Daniel de Andrade Varela e Rafael De Moura Speroni
 
 Unidade 1 - Atividade Prática à Distância
 
