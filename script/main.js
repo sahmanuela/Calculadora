@@ -19,17 +19,21 @@ function calculate() {
   }
 
   //Identificação do usuário por requisição assíncrona
-  var fetchButton = getElementById("fetchButton");
-  var identificationElement = getElementById("identification");
-
-  fetchButton.addEventListener("click", function() {
-    fetch("/identificacao.json")
-      .then(response => response.json())
-      .then(data => {
-        var identification = data.identification;
-        identificationElement.textContent = "Sua identificação é: " + identification;
+  document.getElementById('fetchButton').addEventListener('click', function() {
+    fetch('/identificacao.json')
+      .then(function(response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Erro na requisição');
+        }
       })
-      .catch(error => {
-        console.log("Ocorreu um erro na requisição: ", error);
+      .then(function(data) {
+        var formattedJson = JSON.stringify(data, null, 2);
+        var resultado = document.getElementById('identification');
+        resultado.textContent = formattedJson;
+      })
+      .catch(function(error) {
+        document.getElementById('identification').textContent = error;
       });
   });
